@@ -1,0 +1,198 @@
+{
+  "communities": {
+    "0": [
+      "github_workflows_cortex",
+      "github_workflows_cortex_build_cortex_runs_on",
+      "github_workflows_cortex_build_cortex_steps",
+      "github_workflows_cortex_concurrency",
+      "github_workflows_cortex_concurrency_cancel_in_progress",
+      "github_workflows_cortex_concurrency_group",
+      "github_workflows_cortex_jobs",
+      "github_workflows_cortex_jobs_build_cortex",
+      "github_workflows_cortex_name",
+      "github_workflows_cortex_on",
+      "github_workflows_cortex_on_workflow_dispatch",
+      "github_workflows_cortex_permissions",
+      "github_workflows_cortex_permissions_contents",
+      "github_workflows_cortex_steps_name",
+      "github_workflows_cortex_steps_run",
+      "github_workflows_cortex_steps_uses"
+    ],
+    "1": [
+      "package_dependencies",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_tanstack_react_router",
+      "ref_react_dom",
+      "ref_tanstack_react_router",
+      "src_main",
+      "src_router",
+      "src_router_register",
+      "src_router_router",
+      "src_router_tanstack_react_router",
+      "src_routes_index_route",
+      "src_routes_root",
+      "src_routes_root_rootlayout",
+      "src_routes_root_route",
+      "src_styles"
+    ],
+    "2": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_include"
+    ],
+    "3": [
+      "package_dependencies_lucide_react",
+      "ref_lucide_react",
+      "ref_react",
+      "src_components_ui_button",
+      "src_components_ui_button_button",
+      "src_routes_index",
+      "src_routes_index_buylink",
+      "src_routes_index_productpage",
+      "src_routes_index_projectorart",
+      "src_routes_index_slides",
+      "src_routes_index_specs"
+    ],
+    "4": [
+      "package_devdependencies_tailwindcss_vite",
+      "package_devdependencies_vite",
+      "ref_node_url",
+      "ref_tailwindcss_vite",
+      "ref_vite",
+      "vite_config"
+    ],
+    "5": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version"
+    ],
+    "6": [
+      "package_devdependencies",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_typescript",
+      "ref_tailwindcss",
+      "ref_typescript"
+    ],
+    "7": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview"
+    ],
+    "8": [
+      "package_devdependencies_types_node",
+      "ref_types_node"
+    ],
+    "9": [
+      "package_devdependencies_types_react",
+      "ref_types_react"
+    ],
+    "10": [
+      "package_devdependencies_types_react_dom",
+      "ref_types_react_dom"
+    ],
+    "11": [
+      "package_devdependencies_vitejs_plugin_react",
+      "ref_vitejs_plugin_react"
+    ]
+  },
+  "cohesion": {
+    "0": 0.125,
+    "1": 0.16666666666666666,
+    "2": 0.125,
+    "3": 0.2727272727272727,
+    "4": 0.3333333333333333,
+    "5": 0.4,
+    "6": 0.4,
+    "7": 0.5,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 14
+    },
+    {
+      "id": "ref_tanstack_react_router",
+      "label": "@tanstack/react-router",
+      "degree": 6
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 5
+    },
+    {
+      "id": "github_workflows_cortex_build_cortex_steps",
+      "label": "steps",
+      "degree": 4
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 4
+    },
+    {
+      "id": "src_routes_index_productpage",
+      "label": "ProductPage()",
+      "degree": 4
+    },
+    {
+      "id": "github_workflows_cortex_concurrency",
+      "label": "concurrency",
+      "degree": 3
+    },
+    {
+      "id": "github_workflows_cortex_jobs_build_cortex",
+      "label": "build-cortex",
+      "degree": 3
+    },
+    {
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "degree": 3
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ProductPage()",
+      "target": "Button()",
+      "source_files": [
+        "src/routes/index.tsx",
+        "src/components/ui/button.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
